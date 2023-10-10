@@ -1,10 +1,5 @@
 
 
-
-
-
-
-
 /* Calculator Section No- 16 Start here */
 let buttons_16 = document.querySelector('.buttons-16');
 let btn_16 = document.querySelectorAll('.span-16');
@@ -26,12 +21,18 @@ for(let i = 0; i < btn_16.length; i++) {
             }
         }      
     })
-}
+};
 
 
 toggle_16.onclick = function(){
     calculator_body.classList.toggle('dark');
    
-}
+};
 
 /* Calculator Section No- 16 End here */
+
+
+
+
+
+
