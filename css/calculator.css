@@ -1,0 +1,185 @@
+
+
+
+* {
+    box-sizing:border-box;
+    font-family: 'Poppins', sans-serif;
+    /* font-family: 'Crimson Text', serif;
+     font-family: 'Sedgwick Ave Display', cursive;*/
+}
+
+
+
+html{
+    font-size:10px;
+}
+.bd{
+    border: 0px solid #000;
+}
+
+
+
+
+/* Calculator Section No- 16 Start here */
+.calculator-body {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;min-height: 100vh;
+    background: #edf1f4;
+}
+.dark {    /* Dark Mode js Class */
+    background: #282c2f;
+}
+.calculator-16 {
+    position:relative;
+    width: 340px;
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 15px 15px  20px rgba(0,0,0,0.1),
+                -15px -15px 20px #fffb;
+}
+.dark .calculator-16 {    /* Dark Mode js Class */
+    background: #33393e;
+    box-shadow: 15px 15px  20px rgba(0,0,0,0.25),
+    -15px -15px 20px rgba(255,255,255,0.1);
+
+}
+.calculator-16 .buttons-16 {
+    position :relative;
+    display: grid;
+}
+.calculator-16 .buttons-16 #value-16 {
+    position: relative;
+    grid-column: span 4;
+    user-select: none;
+    overflow: none;
+    width: 100%;
+    text-align: end;
+    color: #5166d6;
+    height: 100px;
+    line-height: 100px;
+    box-shadow: inset 5px 5px 10px rgba(0,0,0,0.1),
+                inset -5px -5px 20px #fff;
+    border-radius: 10px;
+    margin-bottom: 12px ;
+    padding: 0 20px ;
+    font-size: 3rem;
+    font-weight: 500;
+}
+.dark .calculator-16 .buttons-16 #value-16 {    /* Dark Mode js Class */
+    color: #eee;
+    box-shadow: inset 15px 15px  20px rgba(0,0,0,0.5),
+                inset -15px -15px 20px rgba(255,255,255,0.1);
+}
+.calculator-16 .buttons-16 .span-16 {
+    position: relative;
+    padding: 10px;
+    box-shadow: 5px 5px 10px rgba(0,0,0,0.1),
+                -5px -5px 20px #fff;
+    margin: 10px;
+    cursor:pointer;
+    user-select: none;
+    min-width: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+    color: #666;
+    
+    border-radius: 10px;
+}
+.dark .calculator-16 .buttons-16 .span-16 {    /* Dark Mode js Class */
+    color:#eee;
+    border: 2px solid #333;
+    box-shadow: 5px 5px 10px rgba(0,0,0,0.25),
+                -5px -5px 20px rgba(255,255,255,0.1);
+}
+.calculator-16 .buttons-16 .span-16:active {
+    box-shadow: inset 5px 5px 10px rgba(0,0,0,0.1),
+                inset -5px -5px 10px #fff;
+    color: #f44336;
+}
+.dark .calculator-16 .buttons-16 .span-16:active {    /* Dark Mode js Class */
+    box-shadow: inset 5px 5px  10px rgba(0,0,0,0.25),
+                inset -5px -5px 10px rgba(255,255,255,0.1);
+}
+.calculator-16 .buttons-16 .span-16#clear_16 {
+    grid-column: span 2;
+    background: #f44336;
+    color: #fff;
+    border: 2px solid #edf1f4;
+}
+.calculator-16 .buttons-16 .span-16#plus-16 {
+    grid-row: span 2;
+    background: #31a935;
+    color: #fff;
+    border: 2px solid #edf1f4;
+}
+.calculator-16 .buttons-16 .span-16#equal-16 {
+    grid-row: span 2;
+    background: #2196f3;
+    color: #fff;
+    border: 2px solid #edf1f4;
+}
+.dark .calculator-16 .buttons-16 .span-16#clear_16,
+.dark .calculator-16 .buttons-16 .span-16#plus-16,
+.dark .calculator-16 .buttons-16 .span-16#equal-16 {    /* Dark Mode js Class */
+    border: 2px solid #333;
+}
+.calculator-16 .buttons-16 .span-16#clear_16:active,
+.calculator-16 .buttons-16 .span-16#plus-16:active,
+.calculator-16 .buttons-16 .span-16#equal-16:active {
+    box-shadow: inset 5px 5px 10px rgba(0,0,0,0.1),
+                -5px -5px 10px #fff,
+                inset 5px 5px 10px rgba(0,0,0,0.1)#fff;
+}
+
+.dark .calculator-16 .buttons-16 .span-16#clear_16:active,
+.dark .calculator-16 .buttons-16 .span-16#plus-16:active,
+.dark .calculator-16 .buttons-16 .span-16#equal-16:active {   /* Dark Mode js Class */
+    box-shadow: inset 5px 5px 10px rgba(0,0,0,0.1);
+}
+
+
+
+.toggle-16 {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    padding: 10px 20px;
+    border-radius: 10px;
+    color: #fff;
+    font-size: 1.5rem;
+    font-weight: 600;
+    background: #555;
+    cursor: pointer;
+    border: 2px solid #edf1f4;
+    box-shadow: 5px 5px 10px rgba(0,0,0,0.1),
+                -5px -5px 10px #fff;            
+}
+.dark .toggle-16 {    /* Dark Mode js Class */
+    background: #edf1f4;
+    color: #000;
+    border: 2px solid #333;
+    box-shadow: 5px 5px 10px rgba(0,0,0,0.25),
+    -5px -5px 10px rgba(255,255,255,0.1);     
+}
+/* Calculator Section No- 16 End here */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
