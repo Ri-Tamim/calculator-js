@@ -23,9 +23,7 @@ html{
 /* Calculator Section No- 16 Start here */
 .calculator-body {
     position: relative;
-    display: flex;
-    justify-content: center;
-    align-items: center;min-height: 100vh;
+    min-height: 100vh;
     background: #edf1f4;
 }
 .dark {    /* Dark Mode js Class */
